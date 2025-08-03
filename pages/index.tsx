@@ -1,5 +1,6 @@
+import Head from 'next/head';
 import PostBox from '../components/PostBox';
-
+import PostList from '../components/PostList';
 export default function Home() {
   return (
     <>
@@ -24,10 +25,13 @@ export default function Home() {
           <button className="px-6 py-3 bg-white text-black rounded-full hover:bg-gray-300 transition-all">
             Connect Wallet
           </button>
-        </div>
+        
+      </div>
 
+<PostList />
+        
         <div className="mt-16 w-full max-w-2xl">
-          <PostBox />
+          <PostBox wallet="demo-wallet-address" />
         </div>
       </main>
     </>
