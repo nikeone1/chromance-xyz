@@ -1,4 +1,4 @@
-import Head from 'next/head';
+import PostBox from '../components/PostBox';
 
 export default function Home() {
   return (
@@ -7,7 +7,7 @@ export default function Home() {
         <title>CHROMANCE // MNCHRMS</title>
         <meta name="description" content="Bond your Chromies. Mint the future." />
       </Head>
-      <main className="flex min-h-screen flex-col items-center justify-center bg-black text-white">
+      <main className="flex min-h-screen flex-col items-center justify-center bg-black text-white p-4">
         <div className="text-center animate-pulse">
           <h1 className="text-5xl font-bold tracking-widest mb-2">
             MNCHRMS
@@ -24,6 +24,10 @@ export default function Home() {
           <button className="px-6 py-3 bg-white text-black rounded-full hover:bg-gray-300 transition-all">
             Connect Wallet
           </button>
+        </div>
+
+        <div className="mt-16 w-full max-w-2xl">
+          <PostBox />
         </div>
       </main>
     </>
